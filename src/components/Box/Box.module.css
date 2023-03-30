@@ -1,0 +1,21 @@
+.box {
+    width: 285px;
+    height: 320px;
+    border-radius: 8px;
+}
+
+.orange {
+    background: var(--orange-light);
+}
+
+.pink {
+    background: var(--pink);
+}
+
+.green {
+    background: #DBECE5;
+}
+
+.blue {
+    background: var(--blue);
+}

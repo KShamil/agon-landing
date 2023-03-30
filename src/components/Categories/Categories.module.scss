@@ -1,0 +1,169 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 125px;
+
+    .container {
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .top {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .bottom {
+            display: flex;
+            // flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+
+            .left {
+                .bigCard {
+                    width: 415px;
+                    min-height: 289px;
+                    background: #FFFFFF;
+                    border: 1px solid #D1DAE8;
+                    box-shadow: 0px 3px 6px rgba(219, 220, 222, 0.17);
+                    border-radius: 6px;
+                    padding: 40px 30px 40px 30px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    h2 {
+                        font-weight: 600;
+                        font-size: 30px;
+                        line-height: 26px;
+                        margin-bottom: 20px;
+                    }
+
+                    .list {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-bottom: 20px;
+                        border-bottom: 1px solid #E4E7EC;
+                        &:last-child {
+                            border-bottom: none;
+                            padding-bottom: 0;
+                        }
+
+                        .title {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 26px;
+                            color: #667085;
+                        }
+
+                        .circle {
+                            width: 34px;
+                            height: 34px;
+                            background: #E4E7EC;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 26px;
+                            color: #006D77;
+                        }
+                    }
+                }
+            }
+
+            .right {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 30px;
+                margin-bottom: 95px;
+
+                .middleCard {
+                    width: 249px;
+                    height: 44px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15px;
+                    background: #FFFFFF;
+                    border: 1px solid #D1DAE8;
+                    border-radius: 6px;
+                    padding: 25px 15px 25px 20px;
+
+                    .image {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 46px;
+                        height: 46px;
+                        background: #CEE5D9;
+                        border-radius: 50%;
+                    }
+
+                    .text {
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 26px;
+                    }
+                }
+
+                .smallCard {
+                    width: 255px;
+                    height: 57px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15px;
+                    background: #FFFFFF;
+                    border: 1px solid #D1DAE8;
+                    border-radius: 6px;
+
+                    .img {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 34px;
+                        height: 34px;
+                        background: #CEE5D9;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .bottom {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        .container {
+            .bottom {
+                .left {
+                    flex-direction: column;
+                    justify-content: center;
+                    .bigCard {
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
